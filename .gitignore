@@ -1,23 +1,72 @@
-# SECRETS - NEVER COMMIT
-.env
-*.key
-*.pem
-secrets/
+```
+# LaTeX build artifacts
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.out
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.pdf
 
-# State (stored in separate branch)
-state/
+# Generated papers directory - assuming build artifacts may appear here
+generated_papers/**/*.aux
+generated_papers/**/*.log
+generated_papers/**/*.toc
+generated_papers/**/*.lof
+generated_papers/**/*.lot
+generated_papers/**/*.out
+generated_papers/**/*.bbl
+generated_papers/**/*.blg
+generated_papers/**/*.fls
+generated_papers/**/*.fdb_latexmk
+generated_papers/**/*.synctex.gz
 
-# Python
+# Dependencies
+.venv/
+venv/
 __pycache__/
 *.pyc
 *.pyo
-.venv/
-venv/
+*.pyd
+.Python
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+*.tmp
+*.swp
+*.swo
 
-# IDE
+# Environment variables
+.env
+.env.local
+.env.*
+!.env.example
+
+# Editors
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# OS
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+```
